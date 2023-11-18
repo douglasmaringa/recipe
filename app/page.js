@@ -32,7 +32,6 @@ function Page() {
 
   return (
     <div>
-
       <Header />
       <Search setName={setName} setData={setData} />
       <div className='flex items-center justify-center p-10'>
@@ -51,7 +50,6 @@ function Page() {
           
         </div>
       </div>
-
     </div>
   );
 }
