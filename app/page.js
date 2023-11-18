@@ -8,7 +8,7 @@ function Home() {
        <Header/>
        <Search/>
        <div className='flex items-center justify-center p-10'>
-             <div className='flex flex-wrap flex-col lg:flex-row items-center gap-5'>
+             <div className='flex flex-wrap flex-col lg:flex-row items-center gap-4'>
               <Card/>
               <Card/>
               <Card/>
