@@ -2,12 +2,12 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 
-function Card() {
+function Card({meal}) {
   return (
-    <Link href='/recipe/1'>
+    <Link href={`/recipe/${meal?.idMeal}`}>
     <div className='max-w-sm border-2 border-gray-300 cursor-pointer hover:border-black'>
-        <Image src='https://www.themealdb.com/images/media/meals/sytuqu1511553755.jpg' width={350} height={250}/>
-        <h1 className='bg-white py-4 text-gray-500 font-semibold text-2xl text-center'>Beef Pie</h1> 
+        <Image src={meal?.strMealThumb} width={350} height={250} alt='meal image'/>
+        <h1 className='bg-white py-4 text-gray-500 font-semibold text-2xl text-center'>{meal?.strMeal}</h1> 
     </div>
     </Link>
   )
