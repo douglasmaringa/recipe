@@ -1,6 +1,6 @@
+
 import Image from 'next/image';
 
-'use server'
 async function getData(id) {
   const res = await fetch(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${id}`);
   if (!res.ok) {
@@ -9,7 +9,6 @@ async function getData(id) {
   }
   return res.json();
 }
-'use server'
 export default async function Page({ params }) {
   const { id } = params;
 
