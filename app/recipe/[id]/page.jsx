@@ -9,7 +9,7 @@ async function getData(id) {
   }
   return res.json();
 }
-
+'use server'
 export default async function Page({ params }) {
   const { id } = params;
 
