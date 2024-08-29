@@ -1,5 +1,5 @@
-"use client"
-import React, { useEffect, useState } from 'react';
+'use client'
+import React, {useEffect, useState}  from 'react';
 import Card from './components/Card';
 import Header from './components/Header';
 import Search from './components/Search';

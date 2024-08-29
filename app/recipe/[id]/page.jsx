@@ -1,3 +1,4 @@
+
 import Image from 'next/image';
 
 async function getData(id) {
@@ -8,7 +9,6 @@ async function getData(id) {
   }
   return res.json();
 }
-
 export default async function Page({ params }) {
   const { id } = params;
 
